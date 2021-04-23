@@ -3,8 +3,14 @@
 const {promisify} = require('util');
 const fs = require('fs');
 const fileUrl = require('file-url');
-const puppeteer = require('puppeteer-core');
 const toughCookie = require('tough-cookie');
+const dotEnv = require('dotenv').config();
+if(process.env.ENVIRONMENT == 'development'){
+	var puppeteer = require('puppeteer');
+}
+else {
+	var puppeteer = require('puppeteer-core');
+}
 
 const writeFile = promisify(fs.writeFile);
 

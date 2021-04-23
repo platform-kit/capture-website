@@ -38,6 +38,7 @@
 	"dependencies": {
 		"@types/puppeteer": "^5.4.3",
 		"chrome-aws-lambda": "^8.0.2",
+		"dotenv": "^8.2.0",
 		"file-url": "^3.0.0",
 		"puppeteer-core": "^9.0.0",
 		"tough-cookie": "^4.0.0"
