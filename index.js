@@ -3,7 +3,7 @@
 const {promisify} = require('util');
 const fs = require('fs');
 const fileUrl = require('file-url');
-const puppeteer = require('puppeteer');
+const puppeteer = require('puppeteer-core');
 const toughCookie = require('tough-cookie');
 
 const writeFile = promisify(fs.writeFile);
